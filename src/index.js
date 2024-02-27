@@ -23,4 +23,7 @@ boardLogicReportToConsole();
 // ************************************************************************************
 // npm run watch  (to begin watching project)
 // ^+C            (to quit)
+
+// To push changes to gh-pages: 
+// git subtree push --prefix dist origin gh-pages
 // ************************************************************************************
