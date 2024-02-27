@@ -26,7 +26,7 @@ module.exports = {
   },
   plugins: [
     new htmlWebpackPlugin({
-        title: 'Battleship Template',
+        title: 'Kevin Boutilier',
         filename: 'index.html',
         inject: 'body',
     })

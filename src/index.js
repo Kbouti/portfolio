@@ -18,11 +18,12 @@ document.body.appendChild(component());
 boardLogicReportToDom();
 boardLogicReportToConsole();
 
-// Fantastic wepack tutorial: https://www.youtube.com/watch?v=IZGNcSuwBZs
 
 // ************************************************************************************
 // npm run watch  (to begin watching project)
 // ^+C            (to quit)
+
+// npm run test   (to initiate tests)
 
 // To push changes to gh-pages: 
 // git subtree push --prefix dist origin gh-pages
