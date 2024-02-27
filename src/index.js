@@ -1,22 +1,20 @@
 import _ from "lodash";
 import "./style.css";
-import Dice from "./images/dice.png";
-import { boardLogicReportToDom, boardLogicReportToConsole } from "./testFile1";
 
+import headShot1 from "./images/IMG_2391.jpeg";
 
 function component() {
   const element = document.createElement("div");
   element.innerHTML = _.join(["Hello", "webpack"], " ");
   element.classList.add(`hello`);
   const myIcon = new Image();
-  myIcon.src = Dice;
+  myIcon.classList.add("photo");
+  myIcon.src = headShot1;
   element.appendChild(myIcon);
   return element;
 }
 document.body.appendChild(component());
 
-boardLogicReportToDom();
-boardLogicReportToConsole();
 
 
 // ************************************************************************************
