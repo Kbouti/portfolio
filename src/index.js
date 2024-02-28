@@ -13,7 +13,15 @@ function component() {
   element.appendChild(myIcon);
   return element;
 }
-document.body.appendChild(component());
+// document.body.appendChild(component());
+
+import { createBackground } from "./homepage";
+
+createBackground();
+
+
+
+
 
 
 
