@@ -15,9 +15,9 @@ function component() {
 }
 // document.body.appendChild(component());
 
-import { createBackground } from "./homepage";
+import { buildPage } from "./homepage";
 
-createBackground();
+buildPage();
 
 
 

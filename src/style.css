@@ -3,38 +3,35 @@
   margin: 0%;
 }
 
-.photo {
-  width: auto;
-  height: 100vh;
-}
 
-.mainContain {
-  width: 100vw;
-  height: 100vh;
+body {
+  /* width: 100vw;
+  height: 100vh; */
   overflow: hidden;
   position: relative;
+}
+
+
+header {
+  background-color:pink;
 }
 
 .blueSquare {
   background-color: #088baa;
 }
 
-.topSquare {
+/* .topSquare {
   width: 200vw;
   height: 200vh;
   transform: translateY(-80%) translateX(-50%) rotate(-10deg);
-
-
-
-
+} */
 
 /*  Should I be using em or rem units? */
-
 /* Rul Rul helpful https://www.youtube.com/watch?v=VQraviuwbzU */
 /* Start mobile first */
 /*  Font size, use clamp() */
 
-}
+
 
 .bottomSquare {
 width: 100vw;
