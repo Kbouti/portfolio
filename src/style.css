@@ -24,10 +24,15 @@
   height: 200vh;
   transform: translateY(-80%) translateX(-50%) rotate(-10deg);
 
-  /* transform: rotate(345deg); */
-  /* position: absolute;
-  top: -15%;
-  right: -50%; */
+
+
+
+
+/*  Should I be using em or rem units? */
+
+/* Rul Rul helpful https://www.youtube.com/watch?v=VQraviuwbzU */
+/* Start mobile first */
+/*  Font size, use clamp() */
 
 }
 

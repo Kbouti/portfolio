@@ -8,7 +8,7 @@ function createElement(type, parentElement, id, classes) {
     newElement.setAttribute("id", id);
   }
   if (classes != null) {
-    for (let i = 0; i <= classes.length; i++) {
+    for (let i = 0; i < classes.length; i++) {
         newElement.classList.add(classes[i]);
     }
   }
