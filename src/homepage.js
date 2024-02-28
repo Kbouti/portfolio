@@ -18,8 +18,8 @@ function createElement(type, parentElement, id, classes) {
 
 function createBackground() {
   // create style divs and containers
-
-    const topblue = createElement("div", body, "", ["blueSquare"])
+    const mainContain = createElement("div", body, "", ["mainContain"])
+    const topblue = createElement("div", mainContain, "", ["blueSquare"])
 
 
 }

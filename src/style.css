@@ -1,31 +1,26 @@
-
 * {
   padding: 0%;
   margin: 0%;
 }
 
-
-
 .photo {
-  width:auto;
-  height:100vh;
-
+  width: auto;
+  height: 100vh;
 }
 
-
+.mainContain {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
 
 .blueSquare {
-  background-color: #088BAA;
-  width: 100vw;
-  height:30vh;
-  
-  /* transform:skewY(-.5rad); */
-  transform: translateY(20%);
-  
-
-  transform: rotate(330deg);
-
-
-  overflow:hidden;
-  /* translate:  */
+  background-color: #088baa;
+  width: 200vw;
+  height: 50vh;
+  transform: rotate(345deg);
+  position: absolute;
+  top: -15%;
+  right: -50%;
 }
