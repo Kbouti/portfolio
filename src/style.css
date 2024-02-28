@@ -17,10 +17,23 @@
 
 .blueSquare {
   background-color: #088baa;
+}
+
+.topSquare {
   width: 200vw;
-  height: 50vh;
-  transform: rotate(345deg);
-  position: absolute;
+  height: 200vh;
+  transform: translateY(-80%) translateX(-50%) rotate(-10deg);
+
+  /* transform: rotate(345deg); */
+  /* position: absolute;
   top: -15%;
-  right: -50%;
+  right: -50%; */
+
+}
+
+.bottomSquare {
+width: 100vw;
+height: 30vh;
+position:absolute;
+top: 80%;
 }
