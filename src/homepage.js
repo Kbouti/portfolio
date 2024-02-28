@@ -36,7 +36,7 @@ function buildHeader() {
 
   header.appendChild(firstPhoto);
 
-  const mainTitle = createElement("h1", header, "");
+  const mainTitle = createElement("h1", header, "", ["mainTitle"]);
   mainTitle.innerHTML = "Kevin Boutilier";
 
   const aboutSection = createElement("section", header, "");

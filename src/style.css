@@ -13,17 +13,55 @@ body {
 
 
 .photo {
-  height:6rem;
+  height:auto;
   width: auto;
+  margin: auto;
 }
 
 
 header {
   background-color:pink;
+  display: flex;
+  flex-direction:column;
+  position:relative;
 }
+
+
+
 
 .blueSquare {
   background-color: #088baa;
+}
+
+
+.bottomSquare {
+width: 100vw;
+height: 30vh;
+position:absolute;
+top: 80%;
+}
+
+
+@media (max-width: 400px){
+  .photo{
+    margin: 1rem;
+  }
+
+  .mainTitle {
+    position:relative;
+    bottom:6rem;
+    margin-left: 1.5rem;
+    max-width: 6rem;
+  }
+}
+
+@media (min-width: 400px){
+  /* Need to work on this */
+  .photo {
+    height: 6rem;
+    width: auto;
+    margin:auto;
+  }
 }
 
 /* .topSquare {
@@ -36,12 +74,3 @@ header {
 /* Rul Rul helpful https://www.youtube.com/watch?v=VQraviuwbzU */
 /* Start mobile first */
 /*  Font size, use clamp() */
-
-
-
-.bottomSquare {
-width: 100vw;
-height: 30vh;
-position:absolute;
-top: 80%;
-}
