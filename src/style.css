@@ -12,6 +12,12 @@ body {
 }
 
 
+.photo {
+  height:6rem;
+  width: auto;
+}
+
+
 header {
   background-color:pink;
 }
