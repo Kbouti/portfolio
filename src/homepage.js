@@ -110,7 +110,7 @@ function buildMain() {
       "span",
       projectWidgetsContainer,
       "",
-      ["material-symbols-outlined"]
+      ["material-symbols-outlined", "widget"]
     );
     arrowUpRightIcon.innerHTML = "open_in_new";
 
