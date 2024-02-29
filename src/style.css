@@ -1,6 +1,7 @@
 * {
   padding: 0%;
   margin: 0%;
+  border: 2px solid red;
 }
 
 
@@ -21,11 +22,17 @@ body {
 
 header {
   background-color:pink;
+  position:relative;
   display: flex;
   flex-direction:column;
-  position:relative;
 }
 
+.headerPhotoContainer {
+  position:relative;
+  display: flex;
+  flex-direction:column;
+
+}
 
 
 
@@ -41,20 +48,25 @@ position:absolute;
 top: 80%;
 }
 
-
+/* *********************************************************** */
+/* Phone size: */
 @media (max-width: 400px){
   .photo{
     margin: 1rem;
   }
-
   .mainTitle {
-    position:relative;
-    bottom:6rem;
-    margin-left: 1.5rem;
-    max-width: 6rem;
+    position:absolute;
+    bottom:1rem;
+    left: 1rem;
+    max-width:6rem;
   }
 }
 
+
+
+
+/* *********************************************************** */
+/* Larger than phone */
 @media (min-width: 400px){
   /* Need to work on this */
   .photo {
@@ -74,3 +86,10 @@ top: 80%;
 /* Rul Rul helpful https://www.youtube.com/watch?v=VQraviuwbzU */
 /* Start mobile first */
 /*  Font size, use clamp() */
+
+
+/*  If we want to make the photo a background image of a div:
+.photoDiv1 {
+  background: url("./images/IMG_2391.jpeg");
+  margin:1rem;
+} */

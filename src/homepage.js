@@ -1,5 +1,6 @@
 const body = document.body;
 
+const { create } = require("lodash");
 // import headShot1 from "./images/IMG_2391.jpeg";
 const headShot1 = require("./images/IMG_2391.jpeg");
 
@@ -28,15 +29,17 @@ function buildHeader() {
   const header = createElement("header", body, "");
   const topblue = createElement("div", header, "", ["blueSquare", "topSquare"]);
 
-  //  Need photo
-  const firstPhoto = new Image();
+  const headerPhotoContainer = createElement("div", header, "", [
+    "headerPhotoContainer",
+  ]);
 
+  const firstPhoto = new Image();
   firstPhoto.classList.add("photo");
   firstPhoto.src = headShot1;
-
-  header.appendChild(firstPhoto);
-
-  const mainTitle = createElement("h1", header, "", ["mainTitle"]);
+  headerPhotoContainer.appendChild(firstPhoto);
+  const mainTitle = createElement("h1", headerPhotoContainer, "", [
+    "mainTitle",
+  ]);
   mainTitle.innerHTML = "Kevin Boutilier";
 
   const aboutSection = createElement("section", header, "");
