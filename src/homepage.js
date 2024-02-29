@@ -21,7 +21,7 @@ function createElement(type, parentElement, id, classes) {
 function buildPage() {
   buildHeader();
   buildMain();
-  // buildFooter();
+  buildFooter();
   return;
 }
 

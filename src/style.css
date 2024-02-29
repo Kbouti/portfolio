@@ -4,59 +4,50 @@
   border: 2px solid red;
 }
 
-
 body {
-  /* width: 100vw;
-  height: 100vh; */
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 
-
 .photo {
-  height:auto;
+  height: auto;
   width: auto;
   margin: auto;
 }
 
-
 header {
-  background-color:pink;
-  position:relative;
+  background-color: pink;
+  position: relative;
   display: flex;
-  flex-direction:column;
-
+  flex-direction: column;
 }
 
 .headerPhotoContainer {
-  position:relative;
+  position: relative;
   display: flex;
-  flex-direction:column;
-
+  flex-direction: column;
 }
 
-.aboutSection{
+.aboutSection {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .widgetsContainer {
-  align-self:center;
+  align-self: center;
 }
 
 .blueSquare {
   background-color: #088baa;
 }
 
-
 .bottomSquare {
-width: 100vw;
-height: 30vh;
-position:absolute;
-top: 80%;
+  width: auto;
+  height: 30vh;
+  /* position: absolute;
+  top: 80%; */
 }
-
 
 .widget {
   height: 1rem;
@@ -64,30 +55,37 @@ top: 80%;
 }
 
 /* *********************************************************** */
-/* Phone size: */
-@media (max-width: 400px){
-  .photo{
+/* Phone */
+@media (max-width: 500px) {
+  .photo {
     margin: 1rem;
   }
   .mainTitle {
-    position:absolute;
-    bottom:1rem;
+    position: absolute;
+    bottom: 1rem;
     left: 1rem;
-    max-width:6rem;
+    max-width: 6rem;
   }
 }
 
-
-
-
 /* *********************************************************** */
-/* Larger than phone */
-@media (min-width: 400px){
-  /* Need to work on this */
+/* Tablet */
+@media (min-width: 500px) and (max-width: 1000px) {
   .photo {
+    /* This is just to see if the query worked */
     height: 6rem;
     width: auto;
-    margin:auto;
+    margin: auto;
+  }
+}
+
+/* *********************************************************** */
+/* Desktop */
+@media (min-width: 1000px) {
+  .photo {
+    /* This is just to see if the query worked */
+    height: 8rem;
+    width: auto;
   }
 }
 
@@ -102,15 +100,11 @@ top: 80%;
 /* Start mobile first */
 /*  Font size, use clamp() */
 
-
 /*  If we want to make the photo a background image of a div:
 .photoDiv1 {
   background: url("./images/IMG_2391.jpeg");
   margin:1rem;
 } */
-
-
-
 
 /* Icon sources:  */
 /* https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-github */
