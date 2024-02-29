@@ -22,6 +22,10 @@ header {
   flex-direction: column;
 }
 
+.photo {
+  box-shadow: 0px 0px 10px rgb(171, 171, 171);
+}
+
 .title {
   font-family: "Playfair Display";
 }
