@@ -38,12 +38,12 @@ function buildHeader() {
   firstPhoto.src = headShot1;
   headerPhotoContainer.appendChild(firstPhoto);
   const mainTitle = createElement("h1", headerPhotoContainer, "", [
-    "mainTitle",
+    "mainTitle", "title"
   ]);
   mainTitle.innerHTML = "Kevin Boutilier";
 
   const aboutSection = createElement("section", header, "", ["aboutSection"]);
-  const aboutTitle = createElement("h2", aboutSection, "");
+  const aboutTitle = createElement("h2", aboutSection, "", ["title"]);
   aboutTitle.innerHTML = "About me";
   const aboutText = createElement("p", aboutSection, "", ["aboutMeText"]);
   aboutText.innerHTML =
