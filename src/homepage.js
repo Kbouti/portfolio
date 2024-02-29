@@ -43,7 +43,7 @@ function buildHeader() {
   mainTitle.innerHTML = "Kevin Boutilier";
 
   const aboutSection = createElement("section", header, "", ["aboutSection"]);
-  const aboutTitle = createElement("h2", aboutSection, "", ["title"]);
+  const aboutTitle = createElement("h2", aboutSection, "", ["title", "sectionTitle"]);
   aboutTitle.innerHTML = "About me";
   const aboutText = createElement("p", aboutSection, "", ["aboutMeText"]);
   aboutText.innerHTML =
@@ -56,7 +56,16 @@ function buildHeader() {
 }
 
 function buildMain() {
-  const main = createElement("main", body, "");
+  const main = createElement("main", body, "", ["mainContent"]);
+  const contentTitle = createElement("h3", main, "", ["title", "sectionTitle"]);
+  contentTitle.innerHTML = "My Work";
+  const projectsContainer = createElement("div", main, "", ["projectsContainer"]);
+
+
+// Now we gotta build the project tiles
+// I think we'll want to establish a "projects" object. This will be used as the given parameter for the function that renders these elements
+
+
 }
 
 function buildFooter() {

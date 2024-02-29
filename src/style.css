@@ -10,11 +10,6 @@ body {
   font-family: "Roboto";
 }
 
-.photo {
-  height: auto;
-  width: auto;
-  margin: auto;
-}
 
 header {
   background-color: pink;
@@ -41,6 +36,20 @@ header {
 
 .widgetsContainer {
   align-self: center;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 .blueSquare {
@@ -91,6 +100,7 @@ header {
     /* This is just to see if the query worked */
     height: 8rem;
     width: auto;
+    margin: auto;
   }
 }
 
