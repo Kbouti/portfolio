@@ -25,6 +25,7 @@ header {
   position:relative;
   display: flex;
   flex-direction:column;
+
 }
 
 .headerPhotoContainer {
@@ -34,7 +35,15 @@ header {
 
 }
 
+.aboutSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.widgetsContainer {
+  align-self:center;
+}
 
 .blueSquare {
   background-color: #088baa;
