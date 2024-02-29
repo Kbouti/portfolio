@@ -74,6 +74,21 @@ function buildMain() {
 
 for (let i = 0;i<projects.length;i++){
     console.log(projects[i].name);
+
+const newCard = createElement("div", projectsContainer, "", ["projectCard"]);
+const imageContainer = createElement("div", newCard, "", ["cardScreenshot"]);
+// Once we actually start storing the link to the image in the project object we can apply that here
+
+const projectSubBar = createElement("div", newCard, "", ["projectSubBar"]);
+const projectName = createElement("p", projectSubBar, "", ["projectName"]);
+projectName.innerHTML = projects[i].name;
+const projectWidgetsContainer = createElement("div", projectSubBar, "", ["projectWidgetsContainer"]);
+
+const gitHubIcon = createElement("i", projectWidgetsContainer, "", ["fa-github","fa","widget"])
+
+const arrowUpRightIcon = createElement("span", projectWidgetsContainer, "", ["material-symbols-outlined"])
+arrowUpRightIcon.innerHTML = "open_in_new"
+
 }
 
 }
