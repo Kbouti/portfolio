@@ -55,6 +55,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 
@@ -63,12 +64,10 @@ main {
   flex-direction: column;
 }
 
-.projectCard {
-  /* Proportions given just to get an idea of what's happening.  */
-  /* Height and width should be determined dynamically */
+/* .projectCard {
   width: 10rem;
   height: 10rem;
-}
+} */
 
 .projectSubBar {
   display: flex;
@@ -107,6 +106,16 @@ justify-content: space-between;
     left: 1rem;
     max-width: 6rem;
   }
+
+.projectsContainer {
+  width: 100%;
+}
+
+.projectCard{
+  width: auto;
+  margin: 1rem 1rem 0rem 1rem;
+}
+
 }
 
 /* *********************************************************** */
