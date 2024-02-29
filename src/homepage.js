@@ -4,6 +4,13 @@ const { create } = require("lodash");
 // import headShot1 from "./images/IMG_2391.jpeg";
 const headShot1 = require("./images/IMG_2391.jpeg");
 
+const projectsFile = require("./projects");
+const projects = projectsFile.projects;
+
+
+
+
+
 function createElement(type, parentElement, id, classes) {
   const newElement = document.createElement(type);
   if (id !== "") {
@@ -62,9 +69,12 @@ function buildMain() {
   const projectsContainer = createElement("div", main, "", ["projectsContainer"]);
 
 
-// Now we gotta build the project tiles
-// I think we'll want to establish a "projects" object. This will be used as the given parameter for the function that renders these elements
+// projects is an array containing project objects. 
+// We'll use this to build project cards for each one
 
+for (let i = 0;i<projects.length;i++){
+    console.log(projects[i].name);
+}
 
 }
 
