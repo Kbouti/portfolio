@@ -26,7 +26,7 @@ module.exports = {
   },
   plugins: [
     new htmlWebpackPlugin({
-        title: 'Kevin Boutilier',
+      template: './src/template.html',
         filename: 'index.html',
         inject: 'body',
     })
