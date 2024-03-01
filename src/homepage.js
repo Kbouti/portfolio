@@ -170,6 +170,7 @@ function buildFooter() {
     "widget",
   ]);
 
+
 const footerPhoto = new Image();
 footerPhoto.classList.add("footerPhoto");
 footerPhoto.src = headShot2;
