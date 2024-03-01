@@ -113,15 +113,16 @@ main {
   }
 
   .projectName {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .material-symbols-outlined {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0.2rem;
   }
 
-  .widget {
+  .cardWidget {
+    font-size:1.5rem;
     margin: 0.2rem;
   }
 }

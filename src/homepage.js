@@ -103,14 +103,14 @@ function buildMain() {
     const gitHubIcon = createElement("i", projectWidgetsContainer, "", [
       "fa-github",
       "fa",
-      "widget",
+      "cardWidget",
     ]);
 
     const arrowUpRightIcon = createElement(
       "span",
       projectWidgetsContainer,
       "",
-      ["material-symbols-outlined", "widget"]
+      ["material-symbols-outlined", "cardWidget"]
     );
     arrowUpRightIcon.innerHTML = "open_in_new";
 
