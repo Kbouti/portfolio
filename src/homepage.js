@@ -3,6 +3,7 @@ const body = document.body;
 const { create } = require("lodash");
 // import headShot1 from "./images/IMG_2391.jpeg";
 const headShot1 = require("./images/IMG_2391.jpeg");
+const headShot2 = require("./images/IMG_2389.jpeg");
 
 const projectsFile = require("./projects");
 const projects = projectsFile.projects;
@@ -169,7 +170,13 @@ function buildFooter() {
     "widget",
   ]);
 
-// Need widgetsContainer and final photo
+const footerPhoto = new Image();
+footerPhoto.classList.add("footerPhoto");
+footerPhoto.src = headShot2;
+footer.appendChild(footerPhoto);
+
+
+
 }
 
 module.exports = {
