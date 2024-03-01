@@ -211,12 +211,34 @@ footer .widget {
 /* *********************************************************** */
 /* Tablet */
 @media (min-width: 500px) and (max-width: 1000px) {
+
+/* 
+* {
+  border: solid 2px red;
+} */
+
   .photo {
-    /* This is just to see if the query worked */
-    height: 6rem;
+    height: 30rem;
     width: auto;
     margin: auto;
+    margin-top: 3rem;
+    margin-left: 2rem;
   }
+
+  .mainTitle {
+    position: absolute;
+    top: 3rem;
+    right:3rem;
+    font-size: 3.5rem;
+    text-wrap:nowrap;
+  }
+
+  .topSquare {
+    position: absolute;
+    transform: translateY(-20%) translateX(-50%) rotate(-20deg);
+  }
+
+
 }
 
 /* *********************************************************** */
