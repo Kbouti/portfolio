@@ -146,6 +146,14 @@ margin-top: 1rem;
   margin-top: 0;
 }
 
+footer .widgetsContainer {
+  font-size: 2rem;
+}
+
+footer .widget {
+  margin: 1rem;
+}
+
 /* *********************************************************** */
 /* Phone */
 @media (max-width: 500px) {

@@ -156,6 +156,18 @@ function buildFooter() {
   ]);
   emailAddress.innerHTML = "kevin.f.boutilier@gmail.com";
 
+  const widgetsContainer = createElement("div", footer, "", ["widgetsContainer"]);
+
+  const githubLogo = createElement("i", widgetsContainer, "", [
+    "fa-github",
+    "fa",
+    "widget",
+  ]);
+  const linkedinLogo = createElement("i", widgetsContainer, "", [
+    "fa-linkedin",
+    "fa",
+    "widget",
+  ]);
 
 // Need widgetsContainer and final photo
 }
