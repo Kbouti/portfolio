@@ -238,6 +238,15 @@ footer .widget {
     transform: translateY(-20%) translateX(-50%) rotate(-20deg);
   }
 
+  header .widgetsContainer {
+    display:none;
+  }
+
+  main .sectionTitle {
+    align-self:flex-start;
+    margin: 0 1rem;
+  }
+
 
 }
 
