@@ -11,10 +11,6 @@ class Project {
     }
 }
 
-const testProject1 = new Project("testProject1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
-projects.push(testProject1);
-
-
     const battleShipProject = new Project("Battleship", "The classic board game brought to the web. Sink all your opponent's ships before they sink yours! ");
     battleShipProject.Image = require("./images/projectScreenshots/battleship.png");
     projects.push(battleShipProject)
@@ -23,6 +19,13 @@ projects.push(testProject1);
     toDoListProject.Image = require("./images/projectScreenshots/toDoList.png");
     projects.push(toDoListProject);
 
+    const ticTacToeProject = new Project("Tic-Tac-Toe", "The classic game we're all familiar with. Play against a friend, a random computer player, or an unbeatable A.I. ")
+    ticTacToeProject.Image = require("./images/projectScreenshots/ticTacToe.png");
+    projects.push(ticTacToeProject);
+
+    const calculatorProject = new Project("Calculator", "Use your mouse or your keyboard to operate this desktop calulator");
+    calculatorProject.Image = require("./images/projectScreenshots/calculator.png");
+    projects.push(calculatorProject);
 
 
 module.exports = {
