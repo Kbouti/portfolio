@@ -42,6 +42,11 @@ header {
   align-items: center;
 }
 
+.aboutMeText {
+  color: #565656;
+  margin: 1rem;
+}
+
 .widgetsContainer {
   align-self: center;
 }
@@ -96,12 +101,12 @@ main {
 /* Phone */
 @media (max-width: 500px) {
   .photo {
-    margin: 1rem;
+    margin: 1.5rem;
   }
   .mainTitle {
     position: absolute;
     bottom: 1rem;
-    left: 1rem;
+    left: 1.7rem;
     max-width: 6rem;
     font-size: clamp(1rem, 15vw, 5rem);
     /*  Font size works but we need to set a low limit for the photo's width.  */
