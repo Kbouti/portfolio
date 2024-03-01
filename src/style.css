@@ -78,6 +78,12 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem;
+  margin-left: 1.5rem;
+} 
+
+.projectDescription {
+  margin: 1rem;
 }
 
 .projectWidgetsContainer {
@@ -111,6 +117,10 @@ main {
     font-size: clamp(1rem, 15vw, 5rem);
     /*  Font size works but we need to set a low limit for the photo's width.  */
   }
+
+.sectionTitle{
+  font-size: clamp(1rem, 10vw, 3rem);
+}
 
   .projectsContainer {
     width: 100%;

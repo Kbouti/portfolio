@@ -115,7 +115,7 @@ function buildMain() {
     arrowUpRightIcon.innerHTML = "open_in_new";
 
 
-const projectDescription = createElement("p", projectCard, "", ["projectCDescription"]);
+const projectDescription = createElement("p", projectCard, "", ["projectDescription"]);
 projectDescription.innerHTML = projects[i].description;
 
   }
