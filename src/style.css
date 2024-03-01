@@ -103,6 +103,8 @@ main {
     bottom: 1rem;
     left: 1rem;
     max-width: 6rem;
+    font-size: clamp(1rem, 15vw, 5rem);
+    /*  Font size works but we need to set a low limit for the photo's width.  */
   }
 
   .projectsContainer {
