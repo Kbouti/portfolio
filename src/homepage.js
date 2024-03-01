@@ -30,7 +30,10 @@ function buildPage() {
 
 function buildHeader() {
   const header = createElement("header", body, "");
-  const topblue = createElement("div", header, "", ["blueSquare", "topSquare"]);
+
+  // Created blueWrapper to try and hide overflow of top blue tilted box
+  const blueWrapper = createElement("div", header, "", ["blueWrapper"]);
+  const topblue = createElement("div", blueWrapper, "", ["blueSquare", "topSquare"]);
 
   const headerPhotoContainer = createElement("div", header, "", [
     "headerPhotoContainer",
