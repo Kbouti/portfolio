@@ -97,9 +97,7 @@ main {
   align-items: center;
 }
 
-.blueSquare {
-  background-color: #088baa;
-}
+
 
 .blueWrapper {
   width: 100%;
@@ -109,6 +107,8 @@ main {
 }
 
 .topSquare {
+  background-color: #088baa;
+
   width: 300vw;
   height: 80%;
   position: absolute;
@@ -118,11 +118,32 @@ main {
   Easy fix would just be to add some breakpoints to adjust the slanted box's height */
 }
 
-.bottomSquare {
-  width: auto;
-  height: 30vh;
-  /* position: absolute;
-  top: 80%; */
+footer {
+  background-color: #088baa;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerTitle {
+font-size: 2rem;
+margin-top: 1rem;
+}
+
+.footerText {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 350;
+  align-self:flex-start;
+}
+
+.phoneNumber {
+  margin-bottom: 0;
+}
+
+.emailAddress {
+  margin-top: 0;
 }
 
 /* *********************************************************** */

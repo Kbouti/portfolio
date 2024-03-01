@@ -33,7 +33,7 @@ function buildHeader() {
 
   // Created blueWrapper to try and hide overflow of top blue tilted box
   const blueWrapper = createElement("div", header, "", ["blueWrapper"]);
-  const topblue = createElement("div", blueWrapper, "", ["blueSquare", "topSquare"]);
+  const topblue = createElement("div", blueWrapper, "", ["topSquare"]);
 
   const headerPhotoContainer = createElement("div", header, "", [
     "headerPhotoContainer",
@@ -96,7 +96,9 @@ function buildMain() {
     ]);
     // Once we actually start storing the link to the image in the project object we can apply that here
 
-    const projectSubBar = createElement("div", projectCard, "", ["projectSubBar"]);
+    const projectSubBar = createElement("div", projectCard, "", [
+      "projectSubBar",
+    ]);
     const projectName = createElement("p", projectSubBar, "", ["projectName"]);
     projectName.innerHTML = projects[i].name;
     const projectWidgetsContainer = createElement("div", projectSubBar, "", [
@@ -117,19 +119,45 @@ function buildMain() {
     );
     arrowUpRightIcon.innerHTML = "open_in_new";
 
-
-const projectDescription = createElement("p", projectCard, "", ["projectDescription"]);
-projectDescription.innerHTML = projects[i].description;
-
+    const projectDescription = createElement("p", projectCard, "", [
+      "projectDescription",
+    ]);
+    projectDescription.innerHTML = projects[i].description;
   }
 }
 
 function buildFooter() {
   const footer = createElement("footer", body, "");
-  const bottomBlue = createElement("div", footer, "", [
-    "blueSquare",
-    "bottomSquare",
+  const footerTitle = createElement("H4", footer, "", ["footerTitle", "title"]);
+  footerTitle.innerHTML = "Contact me";
+
+  const actionStatement = createElement("p", footer, "", [
+    "actionStatement",
+    "footerText",
   ]);
+  actionStatement.innerHTML =
+    "Please get in touch if you think our work could be mutually beneficial!";
+
+  const address = createElement("p", footer, "", [
+    "footerAddress",
+    "footerText",
+  ]);
+  address.innerHTML = "1223 S. Washington Street Unit B Tacoma, WA 98405";
+
+  const phoneNumber = createElement("p", footer, "", [
+    "phoneNumber",
+    "footerText",
+  ]);
+  phoneNumber.innerHTML = "847-915-8749";
+
+  const emailAddress = createElement("p", footer, "", [
+    "emailAddress",
+    "footerText",
+  ]);
+  emailAddress.innerHTML = "kevin.f.boutilier@gmail.com";
+
+
+// Need widgetsContainer and final photo
 }
 
 module.exports = {
