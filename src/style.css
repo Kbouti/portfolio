@@ -11,9 +11,9 @@
 }
 
 body {
-  /* overflow: hidden; */
   position: relative;
   font-family: "Roboto";
+  min-width:220px;
 }
 
 header {
@@ -102,8 +102,6 @@ main {
   align-items: center;
 }
 
-
-
 .blueWrapper {
   width: 100%;
   height: 100%;
@@ -113,7 +111,6 @@ main {
 
 .topSquare {
   background-color: #088baa;
-
   width: 300vw;
   height: 80%;
   position: absolute;
@@ -204,6 +201,10 @@ footer .widget {
   .cardWidget {
     font-size: 1.5rem;
     margin: 0.2rem;
+  }
+
+  .contactInfo {
+    font-size: 1rem;;
   }
 }
 

@@ -8,10 +8,6 @@ const headShot2 = require("./images/IMG_2389.jpeg");
 
 const battleshipScreenshot = require("./images/projectScreenshots/battleship.png");
 
-// const battleshipScreenshot = require("./images/tabletExample.png");
-
-
-// const projectScreenshots = require("./images/projectScreenshots");
 
 const projectsFile = require("./projects");
 const projects = projectsFile.projects;
@@ -154,19 +150,19 @@ function buildFooter() {
 
   const address = createElement("p", footer, "", [
     "footerAddress",
-    "footerText",
+    "footerText", "contactInfo"
   ]);
   address.innerHTML = "1223 S. Washington Street Unit B Tacoma, WA 98405";
 
   const phoneNumber = createElement("p", footer, "", [
     "phoneNumber",
-    "footerText",
+    "footerText", "contactInfo"
   ]);
   phoneNumber.innerHTML = "847-915-8749";
 
   const emailAddress = createElement("p", footer, "", [
     "emailAddress",
-    "footerText",
+    "footerText", "contactInfo"
   ]);
   emailAddress.innerHTML = "kevin.f.boutilier@gmail.com";
 
