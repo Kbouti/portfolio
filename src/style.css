@@ -80,7 +80,7 @@ main {
   align-items: center;
   margin: 1rem;
   margin-left: 1.5rem;
-} 
+}
 
 .projectDescription {
   margin: 1rem;
@@ -96,24 +96,19 @@ main {
   background-color: #088baa;
 }
 
-
-
 .blueWrapper {
   width: 100%;
   height: 100%;
-  /* My intention was for this to take up 100% of the header */
+  position: absolute;
   overflow: hidden;
-  border: 2px solid red;
 }
 
 .topSquare {
-  width: 100vw;
-  height: 20vw;
+  width: 100rem;
+  height: 40rem;
   position: absolute;
-  /* overflow: hidden; */
-
+  transform: translateY(-60%) translateX(-50%) rotate(-15deg);
 }
-
 
 .bottomSquare {
   width: auto;
@@ -137,9 +132,9 @@ main {
     /*  Font size works but we need to set a low limit for the photo's width.  */
   }
 
-.sectionTitle{
-  font-size: clamp(1rem, 10vw, 3rem);
-}
+  .sectionTitle {
+    font-size: clamp(1rem, 10vw, 3rem);
+  }
 
   .projectsContainer {
     width: 100%;
@@ -156,7 +151,7 @@ main {
   }
 
   .cardWidget {
-    font-size:1.5rem;
+    font-size: 1.5rem;
     margin: 0.2rem;
   }
 }
@@ -183,11 +178,7 @@ main {
   }
 }
 
-/* .topSquare {
-  width: 200vw;
-  height: 200vh;
-  transform: translateY(-80%) translateX(-50%) rotate(-10deg);
-} */
+
 
 /*  Should I be using em or rem units? */
 /* Rul Rul helpful https://www.youtube.com/watch?v=VQraviuwbzU */
