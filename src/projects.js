@@ -1,27 +1,28 @@
 
 const projects = [];
 
-class project {
+
+
+class Project {
     constructor(name, description){
         this.name = name;
         this.description = description;
-        this.image = null;
-        // We'll also need a screenshot (image) for each project. 
-        // Not sure i can link that here
+        this.Image = null;
     }
 }
 
-const testProject1 = new project("testProject1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+const testProject1 = new Project("testProject1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
 projects.push(testProject1);
 
-const testProject2 = new project("testProject2", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ")
-projects.push(testProject2);
 
-const testProject3 = new project("testProject3", "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
-projects.push(testProject3);
+    const battleShipProject = new Project("Battleship", "The classic board game brought to the web. Sink all your opponent's ships before they sink yours! ");
+    battleShipProject.Image = require("./images/projectScreenshots/battleship.png");
+    projects.push(battleShipProject)
 
-const testProject4 = new project("testProject4", "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-projects.push(testProject4);
+    const toDoListProject = new Project("To Do List", "Organize your to-do's with this handy task organizer. Sort your tasks into relevant projects and apply different urgency and status levels to keep important info handy at a glance")
+    toDoListProject.Image = require("./images/projectScreenshots/toDoList.png");
+    projects.push(toDoListProject);
+
 
 
 module.exports = {

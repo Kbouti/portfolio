@@ -5,6 +5,14 @@ const { create } = require("lodash");
 const headShot1 = require("./images/IMG_2391.jpeg");
 const headShot2 = require("./images/IMG_2389.jpeg");
 
+
+const battleshipScreenshot = require("./images/projectScreenshots/battleship.png");
+
+// const battleshipScreenshot = require("./images/tabletExample.png");
+
+
+// const projectScreenshots = require("./images/projectScreenshots");
+
 const projectsFile = require("./projects");
 const projects = projectsFile.projects;
 
@@ -93,9 +101,14 @@ function buildMain() {
       "projectCard",
     ]);
     const imageContainer = createElement("div", projectCard, "", [
-      "cardScreenshot",
+      "cardImageContainer",
     ]);
-    // Once we actually start storing the link to the image in the project object we can apply that here
+
+    const cardImage = new Image();
+    cardImage.classList.add("cardImage");
+    // cardImage.src = battleshipScreenshot;
+    cardImage.src = projects[i].Image;
+    imageContainer.appendChild(cardImage);
 
     const projectSubBar = createElement("div", projectCard, "", [
       "projectSubBar",
