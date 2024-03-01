@@ -109,10 +109,13 @@ main {
 }
 
 .topSquare {
-  width: 100rem;
-  height: 40rem;
+  width: 300vw;
+  height: 80%;
   position: absolute;
-  transform: translateY(-60%) translateX(-50%) rotate(-15deg);
+  transform: translateY(-60%) translateX(-50%) rotate(-30deg);
+  z-index: -1;
+  /* This looks pretty decent but doesn't scale great. 
+  Easy fix would just be to add some breakpoints to adjust the slanted box's height */
 }
 
 .bottomSquare {
