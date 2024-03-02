@@ -138,35 +138,38 @@ function buildMain() {
 
 function buildFooter() {
   const footer = createElement("footer", body, "");
-  const footerTitle = createElement("H4", footer, "", ["footerTitle", "title"]);
+
+  const footerTextContainer = createElement("div", footer, "", ["footerTextContainer"]);
+
+  const footerTitle = createElement("H4", footerTextContainer, "", ["footerTitle", "title"]);
   footerTitle.innerHTML = "Contact me";
 
-  const actionStatement = createElement("p", footer, "", [
+  const actionStatement = createElement("p", footerTextContainer, "", [
     "actionStatement",
     "footerText",
   ]);
   actionStatement.innerHTML =
     "Please get in touch if you think our work could be mutually beneficial!";
 
-  const address = createElement("p", footer, "", [
+  const address = createElement("p", footerTextContainer, "", [
     "footerAddress",
     "footerText", "contactInfo"
   ]);
   address.innerHTML = "1223 S. Washington Street Unit B Tacoma, WA 98405";
 
-  const phoneNumber = createElement("p", footer, "", [
+  const phoneNumber = createElement("p", footerTextContainer, "", [
     "phoneNumber",
     "footerText", "contactInfo"
   ]);
   phoneNumber.innerHTML = "847-915-8749";
 
-  const emailAddress = createElement("p", footer, "", [
+  const emailAddress = createElement("p", footerTextContainer, "", [
     "emailAddress",
     "footerText", "contactInfo"
   ]);
   emailAddress.innerHTML = "kevin.f.boutilier@gmail.com";
 
-  const widgetsContainer = createElement("div", footer, "", ["widgetsContainer"]);
+  const widgetsContainer = createElement("div", footerTextContainer, "", ["widgetsContainer"]);
 
   const githubLogo = createElement("i", widgetsContainer, "", [
     "fa-github",

@@ -125,7 +125,12 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.footerTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 .footerTitle {
@@ -206,6 +211,12 @@ footer .widget {
   .contactInfo {
     font-size: 1rem;;
   }
+
+  .footerPhoto {
+    width: 100%;
+    height: auto;
+    margin-top:1rem;
+  }
 }
 
 /* *********************************************************** */
@@ -270,6 +281,18 @@ footer .widget {
     margin: 0;
   }
 
+  .footerPhoto {
+    width: 40vw;
+  }
+
+  footer {
+    flex-direction: row;
+    padding: 2rem;
+  }
+
+  .footerTextContainer {
+    /* flex-shrink:1; */
+  }
 
 }
 
