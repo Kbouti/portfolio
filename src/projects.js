@@ -45,6 +45,7 @@ const etchASketchProject = new Project(
   "Hover your mouse across the tiles to paint a pretty picture! "
 );
 etchASketchProject.Image = require("./images/screenshots/etch.png");
+// etchASketchProject.Image = require("./images/projectScreenshots/etchASketch.png");
 projects.push(etchASketchProject);
 
 const rockPaperScissorsProject = new Project(
@@ -52,6 +53,7 @@ const rockPaperScissorsProject = new Project(
   "Play a round of Rock Paper Scissors against a computer opponent. First to win two rounds wins the match. "
 );
 rockPaperScissorsProject.Image = require("./images/screenshots/rock.png");
+// rockPaperScissorsProject.Image = require("./images/projectScreenshots/rockPaperScissors.png");
 projects.push(rockPaperScissorsProject);
 
 module.exports = {
