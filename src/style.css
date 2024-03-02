@@ -285,6 +285,16 @@ footer .widget {
     height: auto;
   }
 
+  .material-symbols-outlined {
+    font-size: 1.2rem;
+    margin: 0.2rem;
+  }
+
+  .cardWidget {
+    font-size: 1.2rem;
+    margin: 0.2rem;
+  }
+
   footer {
     display: grid;
     padding: 1rem;
