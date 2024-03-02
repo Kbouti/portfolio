@@ -13,7 +13,7 @@
 body {
   position: relative;
   font-family: "Roboto";
-  min-width:220px;
+  min-width: 220px;
 }
 
 header {
@@ -70,7 +70,7 @@ main {
 .projectsContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
 }
 
 .projectCard {
@@ -80,7 +80,7 @@ main {
 }
 
 .cardImage {
-  width:100%;
+  width: 100%;
 }
 
 .projectSubBar {
@@ -130,19 +130,19 @@ footer {
 .footerTextContainer {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 
 .footerTitle {
-font-size: 2rem;
-margin-top: 1rem;
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 .footerText {
   margin: 1rem;
   font-size: 1.5rem;
   font-weight: 350;
-  align-self:flex-start;
+  align-self: flex-start;
 }
 
 .phoneNumber {
@@ -167,7 +167,7 @@ footer .widget {
 .footerPhoto {
   width: 100%;
   height: auto;
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
 /* *********************************************************** */
@@ -209,21 +209,20 @@ footer .widget {
   }
 
   .contactInfo {
-    font-size: 1rem;;
+    font-size: 1rem;
   }
 
   .footerPhoto {
     width: 100%;
     height: auto;
-    margin-top:1rem;
+    margin-top: 1rem;
   }
 }
 
 /* *********************************************************** */
 /* Tablet */
 @media (min-width: 500px) and (max-width: 1000px) {
-
-/* 
+  /* 
 * {
   border: solid 2px red;
 } */
@@ -239,9 +238,9 @@ footer .widget {
   .mainTitle {
     position: absolute;
     top: 3rem;
-    right:3rem;
+    right: 3rem;
     font-size: 3.5rem;
-    text-wrap:nowrap;
+    text-wrap: nowrap;
   }
 
   .topSquare {
@@ -250,7 +249,7 @@ footer .widget {
   }
 
   header .widgetsContainer {
-    display:none;
+    display: none;
   }
 
   .aboutSection {
@@ -260,14 +259,13 @@ footer .widget {
     z-index: 2; */
   }
 
-
   main .sectionTitle {
-    align-self:flex-start;
+    align-self: flex-start;
     margin-bottom: 1rem;
   }
 
   main {
-    margin:4rem;
+    margin: 4rem;
     width: auto;
   }
 
@@ -282,18 +280,24 @@ footer .widget {
   }
 
   .footerPhoto {
-    width: 40vw;
+    margin: 0;
+    width: 100%;
+    height: auto;
   }
 
   footer {
-    flex-direction: row;
-    padding: 2rem;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
   }
 
   .footerTextContainer {
-    /* flex-shrink:1; */
+    margin: auto;
   }
 
+  .footerText {
+    font-size: clamp(1rem, 2vw, 3rem);
+  }
 }
 
 /* *********************************************************** */
@@ -306,8 +310,6 @@ footer .widget {
     margin: auto;
   }
 }
-
-
 
 /*  Should I be using em or rem units? */
 /* Rul Rul helpful https://www.youtube.com/watch?v=VQraviuwbzU */
