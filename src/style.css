@@ -195,8 +195,8 @@ footer .widget {
   }
 
   header .widgetsContainer {
-    position:relative;
-    right: 1rem
+    position: relative;
+    right: 1rem;
   }
 
   .sectionTitle {
@@ -242,8 +242,8 @@ footer .widget {
 } */
 
   .photo {
-    height: 30rem;
-    width: auto;
+    width: 45vw;
+    height: auto;
     margin: auto;
     margin-top: 3rem;
     margin-left: 2rem;
@@ -343,7 +343,6 @@ footer .widget {
     align-self: flex-start;
     margin-left: 1rem;
   }
-
 }
 
 /*  Should I be using em or rem units? */
