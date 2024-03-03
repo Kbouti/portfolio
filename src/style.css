@@ -328,6 +328,12 @@ footer .widget {
     width: auto;
     margin: auto;
   }
+
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 /*  Should I be using em or rem units? */
