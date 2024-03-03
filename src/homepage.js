@@ -2,11 +2,11 @@ const body = document.body;
 
 const { create } = require("lodash");
 // import headShot1 from "./images/IMG_2391.jpeg";
-const headShot1 = require("./images/IMG_2391.jpeg");
-const headShot2 = require("./images/IMG_2389.jpeg");
+const headShot1 = require("./images/lifestyle/IMG_2391.jpeg");
+const headShot2 = require("./images/lifestyle/IMG_2389.jpeg");
 
 
-const battleshipScreenshot = require("./images/projectScreenshots/battleship.png");
+// const battleshipScreenshot = require("./images/projectScreenshots/battleship.png");
 
 
 const projectsFile = require("./projects");
