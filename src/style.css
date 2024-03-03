@@ -334,6 +334,11 @@ footer .widget {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  main .sectionTitle {
+    align-self: flex-start;
+    margin-left: 1rem;
+  }
+
 }
 
 /*  Should I be using em or rem units? */
