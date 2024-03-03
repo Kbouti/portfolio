@@ -5,8 +5,12 @@ class Project {
     this.name = name;
     this.description = description;
     this.Image = null;
+    this.projectLink = null;
+    this.repoLink = null;
   }
 }
+
+
 
 const battleShipProject = new Project(
   "Battleship",
@@ -14,6 +18,8 @@ const battleShipProject = new Project(
 );
 battleShipProject.Image = require("./images/screenshots/battle.png");
 // battleShipProject.Image = require("./images/projectScreenshots/battleship.png");
+battleShipProject.projectLink = "https://kbouti.github.io/Battleship/";
+battleShipProject.repoLink = "https://github.com/Kbouti/Battleship"
 projects.push(battleShipProject);
 
 const toDoListProject = new Project(
@@ -22,6 +28,8 @@ const toDoListProject = new Project(
 );
 toDoListProject.Image = require("./images/screenshots/toDo.png");
 // toDoListProject.Image = require("./images/projectScreenshots/toDoList.png");
+toDoListProject.projectLink = "https://kbouti.github.io/toDo/";
+toDoListProject.repoLink = "https://github.com/Kbouti/toDo";
 projects.push(toDoListProject);
 
 const ticTacToeProject = new Project(
@@ -30,6 +38,8 @@ const ticTacToeProject = new Project(
 );
 ticTacToeProject.Image = require("./images/screenshots/tic.png");
 // ticTacToeProject.Image = require("./images/projectScreenshots/ticTacToe.png");
+ticTacToeProject.projectLink = "https://kbouti.github.io/ticGame/"
+ticTacToeProject.repoLink = "https://github.com/Kbouti/ticGame";
 projects.push(ticTacToeProject);
 
 const calculatorProject = new Project(
@@ -38,6 +48,8 @@ const calculatorProject = new Project(
 );
 calculatorProject.Image = require("./images/screenshots/calc.png");
 // calculatorProject.Image = require("./images/projectScreenshots/calculator.png");
+calculatorProject.projectLink = "https://kbouti.github.io/calculator/";
+calculatorProject.repoLink = "https://github.com/Kbouti/calculator";
 projects.push(calculatorProject);
 
 const etchASketchProject = new Project(
@@ -46,6 +58,9 @@ const etchASketchProject = new Project(
 );
 etchASketchProject.Image = require("./images/screenshots/etch.png");
 // etchASketchProject.Image = require("./images/projectScreenshots/etchASketch.png");
+etchASketchProject.projectLink = "https://kbouti.github.io/etchy-sketchy/"
+etchASketchProject.repoLink = "https://github.com/Kbouti/etchy-sketchy";
+
 projects.push(etchASketchProject);
 
 const rockPaperScissorsProject = new Project(
