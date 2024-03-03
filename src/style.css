@@ -194,6 +194,11 @@ footer .widget {
     margin: 0rem 1rem 8rem;
   }
 
+  header .widgetsContainer {
+    position:relative;
+    right: 1rem
+  }
+
   .sectionTitle {
     font-size: clamp(1rem, 10vw, 3rem);
   }
