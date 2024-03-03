@@ -60,6 +60,10 @@ header {
   width: 1rem;
 }
 
+.material-symbols-outlined {
+  font-size: 2rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -183,6 +187,11 @@ footer .widget {
     max-width: 6rem;
     font-size: clamp(1rem, 15vw, 5rem);
     /*  Font size works but we need to set a low limit for the photo's width.  */
+  }
+
+  header .widget {
+    font-size: 2rem;
+    margin: 0rem 1rem 8rem;
   }
 
   .sectionTitle {
