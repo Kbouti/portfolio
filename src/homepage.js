@@ -40,7 +40,12 @@ function buildHeader() {
   const blueWrapper = createElement("div", header, "", ["blueWrapper"]);
   const topblue = createElement("div", blueWrapper, "", ["topSquare"]);
   const headerContent = createElement("section", header, "", ["headerContent"]);
-  const headerPhotoContainer = createElement("div", headerContent, "", [
+
+
+  const aboutSection = createElement("div", headerContent, "", ["aboutSection"])
+
+
+  const headerPhotoContainer = createElement("div", aboutSection, "", [
     "headerPhotoContainer",
   ]);
 
@@ -55,7 +60,6 @@ function buildHeader() {
   mainTitle.innerHTML = "Kevin Boutilier";
 
 
-  const aboutSection = createElement("div", headerContent, "", ["aboutSection"])
   const aboutTitle = createElement("h2", aboutSection, "", [
     "title",
     "sectionTitle",
