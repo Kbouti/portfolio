@@ -39,8 +39,8 @@ function buildHeader() {
   // Created blueWrapper to try and hide overflow of top blue tilted box
   const blueWrapper = createElement("div", header, "", ["blueWrapper"]);
   const topblue = createElement("div", blueWrapper, "", ["topSquare"]);
-  const aboutSection = createElement("section", header, "", ["aboutSection"]);
-  const headerPhotoContainer = createElement("div", aboutSection, "", [
+  const headerContent = createElement("section", header, "", ["headerContent"]);
+  const headerPhotoContainer = createElement("div", headerContent, "", [
     "headerPhotoContainer",
   ]);
 
@@ -55,6 +55,7 @@ function buildHeader() {
   mainTitle.innerHTML = "Kevin Boutilier";
 
 
+  const aboutSection = createElement("div", headerContent, "", ["aboutSection"])
   const aboutTitle = createElement("h2", aboutSection, "", [
     "title",
     "sectionTitle",

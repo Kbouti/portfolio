@@ -249,11 +249,49 @@ footer .widget {
   border: solid 2px red;
 } */
 
+header {
+  border: 2px solid violet;
+}
+
   .photo {
     width: 45vw;
-    height: auto;
-    margin: auto;
   }
+
+  .headerPhotoContainer {
+    border: 2px solid blue;
+    position: relative;
+    right: 2rem;
+  }
+
+  .headerContent {
+    display: flex;
+    flex-direction: row;
+    text-wrap:wrap;
+    width: auto;
+    margin: 4rem 4rem 0; 
+    height: 100%;
+    border: 2px solid green;
+    flex-wrap: wrap;
+  }
+
+.aboutSection {
+  border: 2px solid yellow;
+  width: 100%;
+}
+
+
+/* 
+****************************************************************************************************
+
+We CAN change the order of elements with css breakpoints:
+https://stackoverflow.com/questions/7425665/switching-the-order-of-block-elements-with-css
+
+Would that help here? 
+
+****************************************************************************************************
+*/
+
+
 
   .headerPhotoContainer {
     width: 50%;
@@ -261,16 +299,9 @@ footer .widget {
   }
 
   .mainTitle {
-    position: absolute;
-    top: 3rem;
-    width: 25rem;
-    left: 8rem;
-    font-size: 3.5rem;
     /* text-wrap: nowrap; */
   }
 
- 
-/* We re-organized header element heirarchy so we can get header text to wrap in tablet mode */
 
   .topSquare {
     position: absolute;
@@ -283,7 +314,7 @@ footer .widget {
 
   .aboutSection {
     box-shadow: 0px 0px 10px rgb(171, 171, 171);
-    margin: 4rem;
+    /* margin: 4rem; */
     /* position: relative;
     z-index: 2; */
   }
@@ -374,3 +405,22 @@ footer .widget {
 /* Icon sources:  */
 /* https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-github */
 /* https://fontawesome.com/icons/linkedin?f=brands&s=solid */
+
+
+
+
+
+
+
+
+/* I'm working on the portolio project at the end of advanced HTML/CSS course, javascript path.
+I've started styling the site in mobile format and am attempting to alter the style of the header when the viewport width hit the tablet breakpoint. 
+I'm finding that I want to change the html heirarchy to achieve the style I want. 
+For example: 
+In mobile layout I want the main header positioned relative to the photo, but in tablet mode I want it positioned relative to the edge of the screen. 
+
+
+Maaaaybe I'm just trying to go about it in the wrong direction. Maybe I should build the HTML for the tablet layout then use position absolute for mobile
+
+
+*/
