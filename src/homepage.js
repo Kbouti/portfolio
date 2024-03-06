@@ -122,6 +122,7 @@ function buildMain() {
       "projectLink",
     ]);
     githubLink.setAttribute("href", projects[i].repoLink);
+    githubLink.setAttribute("target", "_blank");
     const gitHubIcon = createElement("i", githubLink, "", [
       "fa-github",
       "fa",
@@ -133,6 +134,8 @@ function buildMain() {
       "projectLink",
     ]);
     projectLink.setAttribute("href", projects[i].projectLink);
+    projectLink.setAttribute("target", "_blank");
+
     const arrowUpRightIcon = createElement("span", projectLink, "", [
       "material-symbols-outlined",
       "cardWidget",
