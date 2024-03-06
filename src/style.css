@@ -378,10 +378,50 @@ We should still adjust the size/scale? of the image to adjust proportions but th
 @media (min-width: 1000px) {
   .photo {
     /* This is just to see if the query worked */
-    height: 8rem;
-    width: auto;
-    margin: auto;
+width: 100%;
+height: auto;
   }
+
+  .blankImage {
+    display: none;
+  }
+
+  .topSquare {
+    background-color: #088baa;
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    transform: translateY(-75%) translateX(-30%) rotate(-7deg);
+    /* transform: translateY(0%) translateX(0%) skew(-20deg); */
+
+  }
+
+
+header {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: row;
+}
+
+header .widgetsContainer {
+  display: block;
+}
+
+.headerPhotoContainer {
+  border: 2px solid orange;
+  height: 20rem;
+  width: 30%;
+  margin-left: 4rem;
+}
+
+.aboutSection {
+  border: 2px solid fuchsia
+}
+
+
+
+
+
 
   .projectsContainer {
     display: grid;
