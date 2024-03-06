@@ -39,10 +39,6 @@ function buildHeader() {
   // Created blueWrapper to try and hide overflow of top blue tilted box
   const blueWrapper = createElement("div", header, "", ["blueWrapper"]);
   const topblue = createElement("div", blueWrapper, "", ["topSquare"]);
-
-
-
-
   const headerPhotoContainer = createElement("div", header, "", [
     "headerPhotoContainer",
   ]);
@@ -112,7 +108,6 @@ function buildMain() {
 
     const cardImage = new Image();
     cardImage.classList.add("cardImage");
-    // cardImage.src = battleshipScreenshot;
     cardImage.src = projects[i].Image;
     imageContainer.appendChild(cardImage);
 
@@ -128,14 +123,14 @@ function buildMain() {
     const gitHubIcon = createElement("i", projectWidgetsContainer, "", [
       "fa-github",
       "fa",
-      "cardWidget",
+      "cardWidget", "widgetLink"
     ]);
 
     const arrowUpRightIcon = createElement(
       "span",
       projectWidgetsContainer,
       "",
-      ["material-symbols-outlined", "cardWidget"]
+      ["material-symbols-outlined", "cardWidget", "widgetLink"]
     );
     arrowUpRightIcon.innerHTML = "open_in_new";
 
