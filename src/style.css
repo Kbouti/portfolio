@@ -6,6 +6,10 @@
   /* background-color: pink; */
 }
 
+a {
+  color: inherit;
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   /* We change the size of these by changing font size */
@@ -111,6 +115,7 @@ main {
   color: blue;
   transform: scale(1.1, 1.1);
   transition-duration: .4s;
+  cursor: pointer;
 }
 
 .blueWrapper {
