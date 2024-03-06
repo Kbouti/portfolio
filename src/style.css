@@ -190,6 +190,9 @@ footer .widget {
     font-size: clamp(1rem, 15vw, 5rem);
   }
 
+  .blankImage {
+    display:none;
+  }
   .aboutSection {
     width: 100%;
   }
@@ -275,14 +278,13 @@ Would that help here?
   .aboutSection {
     box-shadow: 0px 0px 10px rgb(171, 171, 171);
     border: 2px solid yellow;
-    display: flex;
-    flex-direction: column;
+    display:inline;
     margin: 0 4rem;
   }
 
 
 .aboutSection .title {
-  align-self: flex-end;
+text-align:end;
   margin-right: 3rem;
 }
 
