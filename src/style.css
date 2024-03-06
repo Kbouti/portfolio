@@ -111,10 +111,14 @@ main {
   align-items: center;
 }
 
+.widgetLink {
+  transition-duration: .3s;
+}
+
 .widgetLink:hover {
   color: blue;
-  transform: scale(1.1, 1.1);
-  transition-duration: 0.4s;
+  transform: scale(1.2, 1.2);
+  transition-duration: .6s;
   cursor: pointer;
 }
 
