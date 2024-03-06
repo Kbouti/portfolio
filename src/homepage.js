@@ -4,10 +4,9 @@ const { create } = require("lodash");
 // import headShot1 from "./images/IMG_2391.jpeg";
 const headShot1 = require("./images/lifestyle/IMG_2391.jpeg");
 const headShot2 = require("./images/lifestyle/IMG_2389.jpeg");
-const blankShot = require("./images/screenshots/blankImage.png")
+const blankShot = require("./images/screenshots/blankImage.png");
 
 // const battleshipScreenshot = require("./images/projectScreenshots/battleship.png");
-
 
 const projectsFile = require("./projects");
 const projects = projectsFile.projects;
@@ -53,13 +52,12 @@ function buildHeader() {
   ]);
   mainTitle.innerHTML = "Kevin Boutilier";
 
-  const aboutSection = createElement("div", header, "", ["aboutSection"])
+  const aboutSection = createElement("div", header, "", ["aboutSection"]);
   const aboutTitle = createElement("h2", aboutSection, "", [
     "title",
     "sectionTitle",
   ]);
   aboutTitle.innerHTML = "About me";
-
 
   const blankImage = new Image();
   blankImage.src = blankShot;
@@ -120,18 +118,26 @@ function buildMain() {
       "projectWidgetsContainer",
     ]);
 
-    const gitHubIcon = createElement("i", projectWidgetsContainer, "", [
+    const githubLink = createElement("a", projectWidgetsContainer, "", [
+      "projectLink",
+    ]);
+    githubLink.setAttribute("href", projects[i].repoLink);
+    const gitHubIcon = createElement("i", githubLink, "", [
       "fa-github",
       "fa",
-      "cardWidget", "widgetLink"
+      "cardWidget",
+      "widgetLink",
     ]);
 
-    const arrowUpRightIcon = createElement(
-      "span",
-      projectWidgetsContainer,
-      "",
-      ["material-symbols-outlined", "cardWidget", "widgetLink"]
-    );
+    const projectLink = createElement("a", projectWidgetsContainer, "", [
+      "projectLink",
+    ]);
+    projectLink.setAttribute("href", projects[i].projectLink);
+    const arrowUpRightIcon = createElement("span", projectLink, "", [
+      "material-symbols-outlined",
+      "cardWidget",
+      "widgetLink",
+    ]);
     arrowUpRightIcon.innerHTML = "open_in_new";
 
     const projectDescription = createElement("p", projectCard, "", [
@@ -144,9 +150,14 @@ function buildMain() {
 function buildFooter() {
   const footer = createElement("footer", body, "");
 
-  const footerTextContainer = createElement("div", footer, "", ["footerTextContainer"]);
+  const footerTextContainer = createElement("div", footer, "", [
+    "footerTextContainer",
+  ]);
 
-  const footerTitle = createElement("H4", footerTextContainer, "", ["footerTitle", "title"]);
+  const footerTitle = createElement("H4", footerTextContainer, "", [
+    "footerTitle",
+    "title",
+  ]);
   footerTitle.innerHTML = "Contact me";
 
   const actionStatement = createElement("p", footerTextContainer, "", [
@@ -158,23 +169,28 @@ function buildFooter() {
 
   const address = createElement("p", footerTextContainer, "", [
     "footerAddress",
-    "footerText", "contactInfo"
+    "footerText",
+    "contactInfo",
   ]);
   address.innerHTML = "1223 S. Washington Street Unit B Tacoma, WA 98405";
 
   const phoneNumber = createElement("p", footerTextContainer, "", [
     "phoneNumber",
-    "footerText", "contactInfo"
+    "footerText",
+    "contactInfo",
   ]);
   phoneNumber.innerHTML = "847-915-8749";
 
   const emailAddress = createElement("p", footerTextContainer, "", [
     "emailAddress",
-    "footerText", "contactInfo"
+    "footerText",
+    "contactInfo",
   ]);
   emailAddress.innerHTML = "kevin.f.boutilier@gmail.com";
 
-  const widgetsContainer = createElement("div", footerTextContainer, "", ["widgetsContainer"]);
+  const widgetsContainer = createElement("div", footerTextContainer, "", [
+    "widgetsContainer",
+  ]);
 
   const githubLogo = createElement("i", widgetsContainer, "", [
     "fa-github",
@@ -187,14 +203,10 @@ function buildFooter() {
     "widget",
   ]);
 
-
-const footerPhoto = new Image();
-footerPhoto.classList.add("footerPhoto");
-footerPhoto.src = headShot2;
-footer.appendChild(footerPhoto);
-
-
-
+  const footerPhoto = new Image();
+  footerPhoto.classList.add("footerPhoto");
+  footerPhoto.src = headShot2;
+  footer.appendChild(footerPhoto);
 }
 
 module.exports = {
