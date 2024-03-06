@@ -114,7 +114,7 @@ main {
 .widgetLink:hover {
   color: blue;
   transform: scale(1.1, 1.1);
-  transition-duration: .4s;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 
@@ -377,9 +377,8 @@ We should still adjust the size/scale? of the image to adjust proportions but th
 /* Desktop */
 @media (min-width: 1000px) {
   .photo {
-    /* This is just to see if the query worked */
-width: 100%;
-height: auto;
+    /* width: 100%;
+    height: auto; */
   }
 
   .blankImage {
@@ -393,35 +392,44 @@ height: auto;
     position: absolute;
     transform: translateY(-75%) translateX(-30%) rotate(-7deg);
     /* transform: translateY(0%) translateX(0%) skew(-20deg); */
-
   }
 
+  header {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-header {
-  border: 2px solid green;
-  display: flex;
-  flex-direction: row;
-}
+    padding: 0 4rem;
+  }
 
-header .widgetsContainer {
-  display: block;
-}
+  main {
+    border: 2px solid salmon;
+    padding: 0 3rem;
+  }
+ 
 
-.headerPhotoContainer {
-  border: 2px solid orange;
-  height: 20rem;
-  width: 30%;
-  margin-left: 4rem;
-}
+  footer {
+    border: 2px solid khaki;
+    flex-direction: row;
+    padding: 0 4rem;
+  }
 
-.aboutSection {
-  border: 2px solid fuchsia
-}
+  
 
+  header .widgetsContainer {
+    display: block;
+  }
 
+  .headerPhotoContainer {
+    border: 2px solid orange;
+    height: 20rem;
+    width: 30%;
+  }
 
-
-
+  .aboutSection {
+    border: 2px solid fuchsia;
+  }
 
   .projectsContainer {
     display: grid;
