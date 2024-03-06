@@ -4,7 +4,7 @@ const { create } = require("lodash");
 // import headShot1 from "./images/IMG_2391.jpeg";
 const headShot1 = require("./images/lifestyle/IMG_2391.jpeg");
 const headShot2 = require("./images/lifestyle/IMG_2389.jpeg");
-
+const blankShot = require("./images/screenshots/blankImage.png")
 
 // const battleshipScreenshot = require("./images/projectScreenshots/battleship.png");
 
@@ -39,13 +39,11 @@ function buildHeader() {
   // Created blueWrapper to try and hide overflow of top blue tilted box
   const blueWrapper = createElement("div", header, "", ["blueWrapper"]);
   const topblue = createElement("div", blueWrapper, "", ["topSquare"]);
-  const headerContent = createElement("section", header, "", ["headerContent"]);
 
 
-  const aboutSection = createElement("div", headerContent, "", ["aboutSection"])
 
 
-  const headerPhotoContainer = createElement("div", aboutSection, "", [
+  const headerPhotoContainer = createElement("div", header, "", [
     "headerPhotoContainer",
   ]);
 
@@ -59,13 +57,22 @@ function buildHeader() {
   ]);
   mainTitle.innerHTML = "Kevin Boutilier";
 
-
+  const aboutSection = createElement("div", header, "", ["aboutSection"])
   const aboutTitle = createElement("h2", aboutSection, "", [
     "title",
     "sectionTitle",
   ]);
   aboutTitle.innerHTML = "About me";
   const aboutText = createElement("p", aboutSection, "", ["aboutMeText"]);
+
+
+
+
+const blankImage = new Image();
+blankImage.src = blankShot;
+blankImage.classList.add("blankImage");
+aboutSection.appendChild(blankImage);
+
   aboutText.innerHTML =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
   const widgetsContainer = createElement("div", header, "", [

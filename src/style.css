@@ -251,9 +251,18 @@ footer .widget {
   border: solid 2px red;
 } */
 
-  header {
-    border: 2px solid violet;
-  }
+
+/* *********************************************************************************
+We need to create a blank image that we use to take up space for the wrap affect in the card.
+We'll place the actual image with absolute positioning
+
+We CAN change the order of elements with css breakpoints:
+https://stackoverflow.com/questions/7425665/switching-the-order-of-block-elements-with-css
+Would that help here? 
+
+********************************************************************************* */
+
+
 
   .headerPhotoContainer {
     border: 2px solid blue;
@@ -261,35 +270,37 @@ footer .widget {
     float: left;
   }
 
-  .headerContent {
-    display: flex;
-    flex-direction: row;
-    text-wrap: wrap;
-    width: auto;
-    margin: 4rem 4rem 0;
-    height: 100%;
-    border: 2px solid green;
-    flex-wrap: wrap;
-  }
+
 
   .aboutSection {
     box-shadow: 0px 0px 10px rgb(171, 171, 171);
     border: 2px solid yellow;
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 0 4rem;
   }
 
-  /* 
-****************************************************************************************************
 
-We CAN change the order of elements with css breakpoints:
-https://stackoverflow.com/questions/7425665/switching-the-order-of-block-elements-with-css
+.aboutSection .title {
+  align-self: flex-end;
+  margin-right: 3rem;
+}
 
-Would that help here? 
+.blankImage {
+  height: 4rem;
+  width: 4rem;
+  float: left;
+  border: 2px solid olivedrab;
+}
 
-****************************************************************************************************
-*/
+
+
+
+
+
+
+
+
 
   .topSquare {
     position: absolute;
