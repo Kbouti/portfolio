@@ -71,15 +71,27 @@ function buildHeader() {
     "widgetsContainer",
   ]);
 
-  const githubLogo = createElement("i", widgetsContainer, "", [
+  const githubLink = createElement("a", widgetsContainer, "", ["widgetLink"]);
+  githubLink.setAttribute("href", "https://github.com/Kbouti");
+  githubLink.setAttribute("target", "_blank");
+  const githubLogo = createElement("i", githubLink, "", [
     "fa-github",
     "fa",
     "widget",
+    "widgetLink",
   ]);
-  const linkedinLogo = createElement("i", widgetsContainer, "", [
+
+  const linkedinLink = createElement("a", widgetsContainer, "", ["widgetLink"]);
+  linkedinLink.setAttribute(
+    "href",
+    "https://www.linkedin.com/in/kevin-boutilier-22702072/"
+  );
+  linkedinLink.setAttribute("target", "_blank");
+  const linkedinLogo = createElement("i", linkedinLink, "", [
     "fa-linkedin",
     "fa",
     "widget",
+    "widgetLink",
   ]);
 }
 
@@ -195,24 +207,28 @@ function buildFooter() {
     "widgetsContainer",
   ]);
 
-
   const githubLink = createElement("a", widgetsContainer, "", ["widgetLink"]);
-githubLink.setAttribute("href", "https://github.com/Kbouti");
-githubLink.setAttribute("target", "_blank");
+  githubLink.setAttribute("href", "https://github.com/Kbouti");
+  githubLink.setAttribute("target", "_blank");
   const githubLogo = createElement("i", githubLink, "", [
     "fa-github",
     "fa",
-    "widget", "widgetLink"
+    "widget",
+    "widgetLink",
   ]);
 
   const linkedinLink = createElement("a", widgetsContainer, "", ["widgetLink"]);
-  linkedinLink.setAttribute("href", "https://www.linkedin.com/in/kevin-boutilier-22702072/");
+  linkedinLink.setAttribute(
+    "href",
+    "https://www.linkedin.com/in/kevin-boutilier-22702072/"
+  );
   linkedinLink.setAttribute("target", "_blank");
 
   const linkedinLogo = createElement("i", linkedinLink, "", [
     "fa-linkedin",
     "fa",
-    "widget", "widgetLink"
+    "widget",
+    "widgetLink",
   ]);
 
   const footerPhoto = new Image();

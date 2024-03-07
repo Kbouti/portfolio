@@ -266,16 +266,6 @@ footer .widget {
 /* *********************************************************** */
 /* Tablet */
 @media (min-width: 500px) and (max-width: 1000px) {
-  /* 
-* {
-  border: solid 2px red;
-} */
-
-  /* *********************************************************************************
-Ok, HUGE progress made. 
-
-We should still adjust the size/scale? of the image to adjust proportions but the layout is coming together. 
-********************************************************************************* */
 
   body {
     min-width: 650px;
@@ -406,6 +396,11 @@ We should still adjust the size/scale? of the image to adjust proportions but th
     padding: 0 4rem;
   }
 
+  header .widgetLink {
+    font-size: 2rem;
+    margin: .5rem;
+  }
+
   main {
     padding: 0 3rem;
   }
@@ -417,6 +412,7 @@ We should still adjust the size/scale? of the image to adjust proportions but th
 
   header .widgetsContainer {
     display: block;
+    align-self: flex-end;
   }
 
   .headerPhotoContainer {
