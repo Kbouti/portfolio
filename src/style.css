@@ -459,6 +459,29 @@ footer .widget {
     align-self: flex-start;
     margin-left: 1rem;
   }
+
+  /* .projectSubBar {
+
+font sizes for widgets need work
+
+    font-size: 1.2rem;;
+  } */
+
+.footerTextContainer {
+  margin-top: 3rem;
+}
+
+.footerTextContainer .widgetsContainer {
+  align-self: flex-start;
+}
+
+  .footerPhoto {
+    margin: 3rem;
+    height: 30rem;
+    object-fit: cover;
+  }
+
+
 }
 
 /*  Should I be using em or rem units? */
