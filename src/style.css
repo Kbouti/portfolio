@@ -98,7 +98,6 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .projectSubBar {
@@ -275,7 +274,6 @@ footer .widget {
 /* *********************************************************** */
 /* Tablet */
 @media (min-width: 500px) and (max-width: 1000px) {
-
   body {
     min-width: 650px;
   }
@@ -351,11 +349,6 @@ footer .widget {
     height: auto;
   }
 
-  .material-symbols-outlined {
-    font-size: 1.2rem;
-    margin: 0.2rem;
-  }
-
   .cardWidget {
     font-size: 1.2rem;
     margin: 0.2rem;
@@ -407,7 +400,7 @@ footer .widget {
 
   header .widgetLink {
     font-size: 2rem;
-    margin: .5rem;
+    margin: 0.5rem;
   }
 
   main {
@@ -460,28 +453,31 @@ footer .widget {
     margin-left: 1rem;
   }
 
-  /* .projectSubBar {
+  .cardWidget {
+    margin: 0.2rem;
+  }
 
-font sizes for widgets need work
+  .projectSubBar {
+    font-size: 1.8rem;
+  }
 
-    font-size: 1.2rem;;
-  } */
+  .upRight {
+    padding-top: 0.2rem;
+  }
 
-.footerTextContainer {
-  margin-top: 3rem;
-}
+  .footerTextContainer {
+    margin-top: 3rem;
+  }
 
-.footerTextContainer .widgetsContainer {
-  align-self: flex-start;
-}
+  .footerTextContainer .widgetsContainer {
+    align-self: flex-start;
+  }
 
   .footerPhoto {
     margin: 3rem;
     height: 30rem;
     object-fit: cover;
   }
-
-
 }
 
 /*  Should I be using em or rem units? */

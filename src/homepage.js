@@ -131,7 +131,7 @@ function buildMain() {
     ]);
 
     const githubLink = createElement("a", projectWidgetsContainer, "", [
-      "projectLink",
+      "projectLink","widgetLink"
     ]);
     githubLink.setAttribute("href", projects[i].repoLink);
     githubLink.setAttribute("target", "_blank");
@@ -143,7 +143,7 @@ function buildMain() {
     ]);
 
     const projectLink = createElement("a", projectWidgetsContainer, "", [
-      "projectLink",
+      "projectLink","widgetLink"
     ]);
     projectLink.setAttribute("href", projects[i].projectLink);
     projectLink.setAttribute("target", "_blank");
@@ -151,7 +151,7 @@ function buildMain() {
     const arrowUpRightIcon = createElement("span", projectLink, "", [
       "material-symbols-outlined",
       "cardWidget",
-      "widgetLink",
+      "widgetLink", "upRight"
     ]);
     arrowUpRightIcon.innerHTML = "open_in_new";
 
