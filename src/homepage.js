@@ -6,6 +6,13 @@ const headShot1 = require("./images/lifestyle/IMG_2391.jpeg");
 const headShot2 = require("./images/lifestyle/IMG_2389.jpeg");
 const blankShot = require("./images/screenshots/blankImage.png");
 
+
+const ebikeBeach = require("./images/lifestyle/eBikeBeach.jpeg");
+const tigerBikerDark = require("./images/lifestyle/tigerBikerDark.jpeg");
+const tigerBikerLight = require("./images/lifestyle/tigerBikerLight.jpeg");
+const tigerBikerVert = require("./images/lifestyle/tigerBikerVert.jpeg");
+
+
 // const battleshipScreenshot = require("./images/projectScreenshots/battleship.png");
 
 const projectsFile = require("./projects");
@@ -276,7 +283,11 @@ function buildFooter() {
 
   const footerPhoto = new Image();
   footerPhoto.classList.add("footerPhoto");
-  footerPhoto.src = headShot2;
+  // footerPhoto.src = headShot2;
+  footerPhoto.src = ebikeBeach;
+  // footerPhoto.src = tigerBikerVert;
+  // footerPhoto.src = tigerBikerDark;
+
   footer.appendChild(footerPhoto);
 }
 
