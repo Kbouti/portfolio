@@ -93,6 +93,17 @@ function buildHeader() {
     "widget",
     "widgetLink",
   ]);
+
+  const emailLink = createElement("a", widgetsContainer, "", []);
+  emailLink.setAttribute("href", "mailto:kevin.f.boutilier@gmail.com");
+  emailLink.setAttribute("target", "_blank");
+  const emailLogo = createElement("i", emailLink, "", [
+    "fa",
+    "fa-solid",
+    "fa-envelope",
+    "widget",
+    "widgetLink",
+  ]);
 }
 
 function buildMain() {
@@ -201,7 +212,7 @@ function buildFooter() {
   const phoneLogo = createElement("i", phoneNumber, "", [
     "fa-solid",
     "fa",
-    "fa-phone"
+    "fa-phone",
   ]);
 
   const phoneNumberText = createElement("p", phoneNumber, "", []);
@@ -214,9 +225,13 @@ function buildFooter() {
     "contactInfo",
   ]);
 
-  const emailLogo  = createElement("i", emailAddress, "", ["fa", "fa-solid", "fa-envelope"]);
+  const emailLogo = createElement("i", emailAddress, "", [
+    "fa",
+    "fa-solid",
+    "fa-envelope",
+  ]);
 
-const emailText = createElement("p", emailAddress, "", []);
+  const emailText = createElement("p", emailAddress, "", []);
 
   emailText.innerHTML = "kevin.f.boutilier@gmail.com";
 
@@ -244,6 +259,17 @@ const emailText = createElement("p", emailAddress, "", []);
   const linkedinLogo = createElement("i", linkedinLink, "", [
     "fa-linkedin",
     "fa",
+    "widget",
+    "widgetLink",
+  ]);
+
+  const emailLink = createElement("a", widgetsContainer, "", []);
+  emailLink.setAttribute("href", "mailto:kevin.f.boutilier@gmail.com");
+  emailLink.setAttribute("target", "_blank");
+  const bigEmailLogo = createElement("i", emailLink, "", [
+    "fa",
+    "fa-solid",
+    "fa-envelope",
     "widget",
     "widgetLink",
   ]);
