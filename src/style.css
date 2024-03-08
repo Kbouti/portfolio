@@ -201,6 +201,14 @@ footer .widget {
   margin-top: 1rem;
 }
 
+.contactInfo {
+  display: flex;
+}
+
+.contactInfo i {
+  margin-right: 1rem;
+}
+
 /* *********************************************************** */
 /* Phone */
 @media (max-width: 500px) {
@@ -268,6 +276,10 @@ footer .widget {
     width: 100%;
     height: auto;
     margin-top: 1rem;
+  }
+
+  .contactInfo i {
+    display: none;
   }
 }
 
@@ -365,6 +377,10 @@ footer .widget {
   }
 
   .footerText {
+    font-size: clamp(1rem, 2vw, 3rem);
+  }
+
+  .contactInfo i {
     font-size: clamp(1rem, 2vw, 3rem);
   }
 }
@@ -478,6 +494,10 @@ footer .widget {
     height: 30rem;
     max-width: 30rem;
     object-fit: cover;
+  }
+
+  .contactInfo i {
+    font-size: clamp(1rem, 2vw, 3rem);
   }
 }
 

@@ -131,7 +131,8 @@ function buildMain() {
     ]);
 
     const githubLink = createElement("a", projectWidgetsContainer, "", [
-      "projectLink","widgetLink"
+      "projectLink",
+      "widgetLink",
     ]);
     githubLink.setAttribute("href", projects[i].repoLink);
     githubLink.setAttribute("target", "_blank");
@@ -143,7 +144,8 @@ function buildMain() {
     ]);
 
     const projectLink = createElement("a", projectWidgetsContainer, "", [
-      "projectLink","widgetLink"
+      "projectLink",
+      "widgetLink",
     ]);
     projectLink.setAttribute("href", projects[i].projectLink);
     projectLink.setAttribute("target", "_blank");
@@ -151,7 +153,8 @@ function buildMain() {
     const arrowUpRightIcon = createElement("span", projectLink, "", [
       "material-symbols-outlined",
       "cardWidget",
-      "widgetLink", "upRight"
+      "widgetLink",
+      "upRight",
     ]);
     arrowUpRightIcon.innerHTML = "open_in_new";
 
@@ -189,19 +192,33 @@ function buildFooter() {
   ]);
   address.innerHTML = "1223 S. Washington Street Unit B Tacoma, WA 98405";
 
-  const phoneNumber = createElement("p", footerTextContainer, "", [
+  const phoneNumber = createElement("div", footerTextContainer, "", [
     "phoneNumber",
     "footerText",
     "contactInfo",
   ]);
-  phoneNumber.innerHTML = "847-915-8749";
 
-  const emailAddress = createElement("p", footerTextContainer, "", [
+  const phoneLogo = createElement("i", phoneNumber, "", [
+    "fa-solid",
+    "fa",
+    "fa-phone"
+  ]);
+
+  const phoneNumberText = createElement("p", phoneNumber, "", []);
+
+  phoneNumberText.innerHTML = "847-915-8749";
+
+  const emailAddress = createElement("div", footerTextContainer, "", [
     "emailAddress",
     "footerText",
     "contactInfo",
   ]);
-  emailAddress.innerHTML = "kevin.f.boutilier@gmail.com";
+
+  const emailLogo  = createElement("i", emailAddress, "", ["fa", "fa-solid", "fa-envelope"]);
+
+const emailText = createElement("p", emailAddress, "", []);
+
+  emailText.innerHTML = "kevin.f.boutilier@gmail.com";
 
   const widgetsContainer = createElement("div", footerTextContainer, "", [
     "widgetsContainer",
