@@ -13,8 +13,13 @@ buildPage();
 // *************************************************************************************
 // What's left: 
 
-// Write aboutMeMessage
-// Set total max width for loarge screens
+// Finalize aboutMeMessage
+// Set total max width for large screens
+// Check screenreader compatibility?
+// Set alt atribute for photos
+// Check layout on LAAAAARGE screen
+
+// Write descriptive ReadMe pages for all projects
 
 // *************************************************************************************
 
