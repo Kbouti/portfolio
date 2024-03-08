@@ -11,8 +11,11 @@ buildPage();
 
 
 // *************************************************************************************
-// Ok--
-// I think next we need to go back to our old project screenshots without browswer bars, use those and resize photos so they're uniform
+// What's left: 
+
+// Add material icons for phone and email to footer
+// Source 3rd material icon for indeed or something
+
 // *************************************************************************************
 
 
