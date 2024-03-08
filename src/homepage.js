@@ -201,7 +201,7 @@ function buildFooter() {
     "footerText",
     "contactInfo",
   ]);
-  address.innerHTML = "1223 S. Washington Street Unit B Tacoma, WA 98405";
+  address.innerHTML = "Tacoma WA, 98405";
 
   const phoneNumber = createElement("div", footerTextContainer, "", [
     "phoneNumber",
