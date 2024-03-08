@@ -1,19 +1,22 @@
 const body = document.body;
 
 const { create } = require("lodash");
-// import headShot1 from "./images/IMG_2391.jpeg";
+
 const headShot1 = require("./images/lifestyle/IMG_2391.jpeg");
-const headShot2 = require("./images/lifestyle/IMG_2389.jpeg");
+// const headShot2 = require("./images/lifestyle/IMG_2389.jpeg");
 const blankShot = require("./images/screenshots/blankImage.png");
-
-
 const ebikeBeach = require("./images/lifestyle/eBikeBeach.jpeg");
-const tigerBikerDark = require("./images/lifestyle/tigerBikerDark.jpeg");
-const tigerBikerLight = require("./images/lifestyle/tigerBikerLight.jpeg");
-const tigerBikerVert = require("./images/lifestyle/tigerBikerVert.jpeg");
+// const tigerBikerDark = require("./images/lifestyle/tigerBikerDark.jpeg");
+// const tigerBikerLight = require("./images/lifestyle/tigerBikerLight.jpeg");
+// const tigerBikerVert = require("./images/lifestyle/tigerBikerVert.jpeg");
 
+// ******************************************************************************
+// const aboutMeMessage =   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
-// const battleshipScreenshot = require("./images/projectScreenshots/battleship.png");
+const aboutMeMessage =
+  "Equipped with a Bachelor's degree in Business from the University of Denver and 15 years of experience in the bicycle industry, I now set my sights on a new career in web development. Having utilized guidance from the Odin Project's self taught curriculum I am now competent in HTML, CSS, Javascript, and webpack while still in the process of learning react and NodeJS. I am excited to bring my enthusiasm for helping others and solving problems to a new career in tech. ";
+
+// ******************************************************************************
 
 const projectsFile = require("./projects");
 const projects = projectsFile.projects;
@@ -72,8 +75,7 @@ function buildHeader() {
   aboutSection.appendChild(blankImage);
 
   const aboutText = createElement("p", aboutSection, "", ["aboutMeText"]);
-  aboutText.innerHTML =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+  aboutText.innerHTML = aboutMeMessage;
   const widgetsContainer = createElement("div", aboutSection, "", [
     "widgetsContainer",
   ]);

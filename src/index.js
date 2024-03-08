@@ -13,8 +13,8 @@ buildPage();
 // *************************************************************************************
 // What's left: 
 
-// Add material icons for phone and email to footer
-// Source 3rd material icon for indeed or something
+// Write aboutMeMessage
+// Set total max width for loarge screens
 
 // *************************************************************************************
 
