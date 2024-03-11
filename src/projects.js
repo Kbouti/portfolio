@@ -58,7 +58,7 @@ const etchASketchProject = new Project(
 );
 // etchASketchProject.Image = require("./images/screenshots/etch.png");
 etchASketchProject.Image = require("./images/projectScreenshots/etchASketch.png");
-etchASketchProject.projectLink = "https://kbouti.github.io/etchy-sketchy/"
+etchASketchProject.projectLink = "https://kbouti.github.io/etchy-sketchy/";
 etchASketchProject.repoLink = "https://github.com/Kbouti/etchy-sketchy";
 
 projects.push(etchASketchProject);
@@ -69,6 +69,8 @@ const rockPaperScissorsProject = new Project(
 );
 // rockPaperScissorsProject.Image = require("./images/screenshots/rock.png");
 rockPaperScissorsProject.Image = require("./images/projectScreenshots/rockPaperScissors.png");
+rockPaperScissorsProject.projectLink = "https://kbouti.github.io/rock-paper-scissors/"
+rockPaperScissorsProject.repoLink = "https://github.com/Kbouti/rock-paper-scissors";
 projects.push(rockPaperScissorsProject);
 
 module.exports = {
