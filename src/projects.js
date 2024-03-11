@@ -10,8 +10,6 @@ class Project {
   }
 }
 
-
-
 const battleShipProject = new Project(
   "Battleship",
   "The classic board game brought to the web. Sink all of your opponent's ships before they sink yours! "
@@ -19,7 +17,7 @@ const battleShipProject = new Project(
 // battleShipProject.Image = require("./images/screenshots/battle.png");
 battleShipProject.Image = require("./images/projectScreenshots/battleship.png");
 battleShipProject.projectLink = "https://kbouti.github.io/Battleship/";
-battleShipProject.repoLink = "https://github.com/Kbouti/Battleship"
+battleShipProject.repoLink = "https://github.com/Kbouti/Battleship";
 projects.push(battleShipProject);
 
 const toDoListProject = new Project(
@@ -38,9 +36,19 @@ const ticTacToeProject = new Project(
 );
 // ticTacToeProject.Image = require("./images/screenshots/tic.png");
 ticTacToeProject.Image = require("./images/projectScreenshots/ticTacToe.png");
-ticTacToeProject.projectLink = "https://kbouti.github.io/ticGame/"
+ticTacToeProject.projectLink = "https://kbouti.github.io/ticGame/";
 ticTacToeProject.repoLink = "https://github.com/Kbouti/ticGame";
 projects.push(ticTacToeProject);
+
+const adminDashboardProject = new Project(
+  "Admin Dashboard",
+  "The goal of this project was to clone a template for a basic social media site. Looks pretty real, right?"
+);
+
+adminDashboardProject.Image = require("./images/projectScreenshots/adminDashboard.png");
+adminDashboardProject.projectLink = "https://kbouti.github.io/adminDashboard/";
+adminDashboardProject.repoLink = "https://github.com/Kbouti/adminDashboard";
+projects.push(adminDashboardProject);
 
 const calculatorProject = new Project(
   "Calculator",
@@ -69,8 +77,10 @@ const rockPaperScissorsProject = new Project(
 );
 // rockPaperScissorsProject.Image = require("./images/screenshots/rock.png");
 rockPaperScissorsProject.Image = require("./images/projectScreenshots/rockPaperScissors.png");
-rockPaperScissorsProject.projectLink = "https://kbouti.github.io/rock-paper-scissors/"
-rockPaperScissorsProject.repoLink = "https://github.com/Kbouti/rock-paper-scissors";
+rockPaperScissorsProject.projectLink =
+  "https://kbouti.github.io/rock-paper-scissors/";
+rockPaperScissorsProject.repoLink =
+  "https://github.com/Kbouti/rock-paper-scissors";
 projects.push(rockPaperScissorsProject);
 
 module.exports = {
