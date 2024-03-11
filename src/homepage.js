@@ -55,6 +55,7 @@ function buildHeader() {
   const firstPhoto = new Image();
   firstPhoto.classList.add("photo");
   firstPhoto.src = headShot1;
+  firstPhoto.alt = "Smiling man in the mountains"
   headerPhotoContainer.appendChild(firstPhoto);
   const mainTitle = createElement("h1", headerPhotoContainer, "", [
     "mainTitle",
@@ -285,11 +286,8 @@ function buildFooter() {
 
   const footerPhoto = new Image();
   footerPhoto.classList.add("footerPhoto");
-  // footerPhoto.src = headShot2;
   footerPhoto.src = ebikeBeach;
-  // footerPhoto.src = tigerBikerVert;
-  // footerPhoto.src = tigerBikerDark;
-
+  footerPhoto.alt = "Man on the beach sitting atop an electric bicycle";
   footer.appendChild(footerPhoto);
 }
 
