@@ -140,6 +140,7 @@ function buildMain() {
     const cardImage = new Image();
     cardImage.classList.add("cardImage");
     cardImage.src = projects[i].Image;
+    cardImage.alt = projects[i].alt;
     imageContainer.appendChild(cardImage);
 
     const projectSubBar = createElement("div", projectCard, "", [

@@ -5,6 +5,7 @@ class Project {
     this.name = name;
     this.description = description;
     this.Image = null;
+    this.alt = null;
     this.projectLink = null;
     this.repoLink = null;
   }
@@ -27,7 +28,7 @@ const toDoListProject = new Project(
 );
 // toDoListProject.Image = require("./images/screenshots/toDo.png");
 toDoListProject.Image = require("./images/projectScreenshots/toDoList.png");
-toDoListProject.Image.alt = "A to-do list applicaton showing various tasks"
+toDoListProject.alt = "A to-do list applicaton showing various tasks"
 toDoListProject.projectLink = "https://kbouti.github.io/toDo/";
 toDoListProject.repoLink = "https://github.com/Kbouti/toDo";
 projects.push(toDoListProject);
@@ -38,7 +39,7 @@ const ticTacToeProject = new Project(
 );
 // ticTacToeProject.Image = require("./images/screenshots/tic.png");
 ticTacToeProject.Image = require("./images/projectScreenshots/ticTacToe.png");
-ticTacToeProject.Image.alt = "A game of tic-tac-toe"
+ticTacToeProject.alt = "A game of tic-tac-toe"
 ticTacToeProject.projectLink = "https://kbouti.github.io/ticGame/";
 ticTacToeProject.repoLink = "https://github.com/Kbouti/ticGame";
 projects.push(ticTacToeProject);
@@ -49,7 +50,7 @@ const adminDashboardProject = new Project(
 );
 
 adminDashboardProject.Image = require("./images/projectScreenshots/adminDashboard.png");
-adminDashboardProject.Image.alt = "A professional looking social media site"
+adminDashboardProject.alt = "A professional looking social media site"
 adminDashboardProject.projectLink = "https://kbouti.github.io/adminDashboard/";
 adminDashboardProject.repoLink = "https://github.com/Kbouti/adminDashboard";
 projects.push(adminDashboardProject);
@@ -60,7 +61,7 @@ const calculatorProject = new Project(
 );
 // calculatorProject.Image = require("./images/screenshots/calc.png");
 calculatorProject.Image = require("./images/projectScreenshots/calculator.png");
-calculatorProject.Image.alt = "A calculator"
+calculatorProject.alt = "A calculator"
 calculatorProject.projectLink = "https://kbouti.github.io/calculator/";
 calculatorProject.repoLink = "https://github.com/Kbouti/calculator";
 projects.push(calculatorProject);
@@ -71,7 +72,7 @@ const etchASketchProject = new Project(
 );
 // etchASketchProject.Image = require("./images/screenshots/etch.png");
 etchASketchProject.Image = require("./images/projectScreenshots/etchASketch.png");
-etchASketchProject.Image.alt = "A virtual Etch-A-Sketch"
+etchASketchProject.alt = "A virtual Etch-A-Sketch"
 etchASketchProject.projectLink = "https://kbouti.github.io/etchy-sketchy/";
 etchASketchProject.repoLink = "https://github.com/Kbouti/etchy-sketchy";
 
@@ -83,7 +84,7 @@ const rockPaperScissorsProject = new Project(
 );
 // rockPaperScissorsProject.Image = require("./images/screenshots/rock.png");
 rockPaperScissorsProject.Image = require("./images/projectScreenshots/rockPaperScissors.png");
-rockPaperScissorsProject.Image.alt = "User interface for a rock paper scissors game"
+rockPaperScissorsProject.alt = "User interface for a rock paper scissors game"
 rockPaperScissorsProject.projectLink =
   "https://kbouti.github.io/rock-paper-scissors/";
 rockPaperScissorsProject.repoLink =
