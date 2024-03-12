@@ -10,13 +10,10 @@ const ebikeBeach = require("./images/lifestyle/eBikeBeach.jpeg");
 // const tigerBikerLight = require("./images/lifestyle/tigerBikerLight.jpeg");
 // const tigerBikerVert = require("./images/lifestyle/tigerBikerVert.jpeg");
 
-// ******************************************************************************
-// const aboutMeMessage =   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
 const aboutMeMessage =
   "Equipped with a Bachelor's degree in Business from the University of Denver and 15 years of experience in the bicycle industry, I set my sights on a new career in web development. Utilizing the Odin Project's self taught curriculum I am now comfortable with HTML, CSS, Javascript, and Webpack and still in the process of learning React and NodeJS. I'm passionate about helping people and I can't wait to utilize my technical skills to solve new and exciting problems.";
 
-// ******************************************************************************
 
 const projectsFile = require("./projects");
 const projects = projectsFile.projects;
