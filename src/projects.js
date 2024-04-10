@@ -11,6 +11,19 @@ class Project {
   }
 }
 
+
+const cvProject = new Project(
+  "CV-Project",
+  "An application to make a personal CV/resume. Input your details to see the result. "
+);
+
+cvProject.Image = require("./images/projectScreenshots/cvProject.png");
+cvProject.Image.alt = "An application that outputs a professional resume. Built using React. ";
+cvProject.projectLink = "https://cv-project-pi-lovat.vercel.app/";
+cvProject.repoLink = "https://github.com/Kbouti/CV-Project";
+projects.push(cvProject);
+
+
 const battleShipProject = new Project(
   "Battleship",
   "The classic board game brought to the web. Sink all of your opponent's ships before they sink yours! "
