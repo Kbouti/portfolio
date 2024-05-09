@@ -11,14 +11,25 @@ class Project {
   }
 }
 
+const memoryCardProject = new Project(
+  "Memory Card",
+  "Test your memory with dog photos. Try not to click the same card twice to beat your high score. Built using React"
+)
+
+memoryCardProject.Image = require("./images/projectScreenshots/memoryCard.png");
+memoryCardProject.Image.alt = "A game featuring several photos of dogs";
+memoryCardProject.projectLink = "https://memory-card-eight-sand.vercel.app/";
+memoryCardProject.repoLink = "https://github.com/Kbouti/memoryCard";
+projects.push(memoryCardProject);
+
 
 const cvProject = new Project(
   "CV-Project",
-  "An application to make a personal CV/resume. Input your details to see the result. "
+  "An application to make a personal CV/resume. Input your details to see the result. Built using React"
 );
 
 cvProject.Image = require("./images/projectScreenshots/cvProject.png");
-cvProject.Image.alt = "An application that outputs a professional resume. Built using React. ";
+cvProject.Image.alt = "An application that outputs a professional resume.";
 cvProject.projectLink = "https://cv-project-pi-lovat.vercel.app/";
 cvProject.repoLink = "https://github.com/Kbouti/CV-Project";
 projects.push(cvProject);
