@@ -11,6 +11,19 @@ class Project {
   }
 }
 
+const membersOnlyProject = new Project(
+  "Members Only",
+  "Full stack message board utilizing Node.js, Postgresl, and Bcrypt authentication to limit functionality based on membership status "
+);
+
+membersOnlyProject.Image = require("./images/projectScreenshots/membersOnly.png");
+membersOnlyProject.Image.alt = "Login page for message board application";
+membersOnlyProject.projectLink = "https://membersonly-production-e019.up.railway.app/";
+membersOnlyProject.repoLink = "https://github.com/Kbouti/membersOnly";
+projects.push(membersOnlyProject);
+
+
+
 const shoppingCartProject = new Project(
   "Shopping Cart",
   "Basic simulation of an online store using React. Products imported from an API. "
