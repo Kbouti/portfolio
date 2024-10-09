@@ -18,11 +18,21 @@ const membersOnlyProject = new Project(
 
 membersOnlyProject.Image = require("./images/projectScreenshots/membersOnly.png");
 membersOnlyProject.Image.alt = "Login page for message board application";
-membersOnlyProject.projectLink = "https://membersonly-production-e019.up.railway.app/";
+membersOnlyProject.projectLink =
+  "https://membersonly-production-e019.up.railway.app/";
 membersOnlyProject.repoLink = "https://github.com/Kbouti/membersOnly";
 projects.push(membersOnlyProject);
 
+const inventoryProject = new Project(
+  "Inventory Application",
+  "Inventory application utilizing Node.js and a Postgresql database to help keep your life organized"
+);
 
+inventoryProject.Image = require("./images/projectScreenshots/inventoryApplication.png");
+inventoryProject.Image.alt = "Inventory Application page";
+inventoryProject.projectLink = "https://inventoryapplication.up.railway.app";
+inventoryProject.repoLink = "https://github.com/Kbouti/Inventory-Application";
+projects.push(inventoryProject);
 
 const shoppingCartProject = new Project(
   "Shopping Cart",
@@ -37,7 +47,7 @@ projects.push(shoppingCartProject);
 
 const memoryCardProject = new Project(
   "Memory Card",
-  "Test your memory with dog photos. Try not to click the same card twice to beat your high score. Built using React"
+  "Test your memory with dog photos. Try not to click the same card twice to beat your high score. Built using React."
 );
 
 memoryCardProject.Image = require("./images/projectScreenshots/memoryCard.png");
@@ -48,7 +58,7 @@ projects.push(memoryCardProject);
 
 const cvProject = new Project(
   "CV-Project",
-  "An application to make a personal CV/resume. Input your details to see the result. Built using React"
+  "A React application to make a personal CV/resume. Input your details to see the result."
 );
 
 cvProject.Image = require("./images/projectScreenshots/cvProject.png");
