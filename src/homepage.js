@@ -12,7 +12,7 @@ const ebikeBeach = require("./images/lifestyle/eBikeBeach.jpeg");
 
 
 const aboutMeMessage =
-  "With a Bachelor's degree in Business from the University of Denver and 15 years of experience in the bicycle industry, I set my sights on a new career in web development. Utilizing the Odin Project's self taught curriculum I am now skilled with HTML, CSS, Javascript, React, SQL, and Node.js. I'm passionate about helping people reach their goals, and I can't wait to utilize my technical skills to solve new and exciting problems.";
+  "With a Bachelor's degree in Business from the University of Denver and 15 years of experience in the bicycle industry, I set my sights on a new career in web development. Utilizing The Odin Project's self taught curriculum I am now skilled with HTML, CSS, Javascript, React, SQL, and Node.js. I'm passionate about helping people reach their goals, and I can't wait to utilize my technical skills to solve new and exciting problems!";
 
 
 const projectsFile = require("./projects");
