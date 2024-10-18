@@ -13,7 +13,7 @@ class Project {
 
 const membersOnlyProject = new Project(
   "Members Only",
-  "Full stack message board utilizing Node.js, Postgresl, and Bcrypt authentication to limit functionality based on membership status "
+  "Full stack message board utilizing Node.js, Postgresl, and Bcrypt authentication to limit functionality based on membership status. "
 );
 
 membersOnlyProject.Image = require("./images/projectScreenshots/membersOnly.png");
@@ -25,7 +25,7 @@ projects.push(membersOnlyProject);
 
 const inventoryProject = new Project(
   "Inventory Application",
-  "Inventory application utilizing Node.js and a Postgresql database to help keep your life organized"
+  "Inventory application utilizing Node.js and a Postgresql database to help keep your life organized."
 );
 
 inventoryProject.Image = require("./images/projectScreenshots/inventoryApplication.png");
